@@ -3,15 +3,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>97afae82-35bb-4b97-adea-42c1160bd8d5</ProjectGuid>
+    <ProjectGuid>f1629a66-78fa-4304-b1e8-2589065682a0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PythonApplication1.py</StartupFile>
+    <StartupFile>PythonApplication2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>PythonApplication1</Name>
-    <RootNamespace>PythonApplication1</RootNamespace>
+    <Name>PythonApplication2</Name>
+    <RootNamespace>PythonApplication2</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,13 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="module1.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="PythonApplication1.py" />
+    <Compile Include="PythonApplication2.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sketch.txt" />
+    <Content Include="james.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
