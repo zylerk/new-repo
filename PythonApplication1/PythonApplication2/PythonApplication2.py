@@ -1,7 +1,5 @@
 
-
 import os
-
 
 
 def sanitize(time_string):
@@ -67,7 +65,7 @@ def get_data2(file_name):
 
 
 r_james = get_data2("james2.txt")
-#julie = get_data("julie2.txt")
+julie = get_data("julie2.txt")
 #sarah = get_data("sarah2.txt")
 #mikey = get_data("mikey2.txt")
 #s = get_data("s.txt")
