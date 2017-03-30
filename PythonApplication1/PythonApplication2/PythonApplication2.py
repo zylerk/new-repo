@@ -3,18 +3,7 @@
 import os
 
 from athletelist import AthleteList
-
-
-def sanitize(time_string):
-    if '-' in time_string:
-        splitter = '-'
-    elif ':' in time_string:
-        splitter = ':'
-    else:
-        return (time_string)
-
-    (mins,secs) = time_string.split(splitter)
-    return (mins + '.' + secs)
+from athletemodel import *
 
 
 def get_data(file_name):
@@ -37,35 +26,15 @@ def get_data(file_name):
 
         return None
 
-
-
-        
-
-def get_data2(file_name):
-    try:
-        with open(file_name) as f_read:
-            data = f_read.readline()
-
-        data = data.strip().split(',')
-
-        a = AthleteList(data.pop(0), data.pop(0), sorted ( set ( [sanitize(each_t) for each_t in data])) )
-                        
-        return a
-        
-    except IOError as ioerr:
-        print("IO Error: ", str(ioerr)  )
-        return None
-                
-
-
-r_james = get_data2("james2.txt")
-#julie = get_data("julie2.txt")
-#sarah = get_data("sarah2.txt")
-#mikey = get_data("mikey2.txt")
-#s = get_data("s.txt")
-
-
+r_james = get_coach_data("james2.txt")
 print (r_james.name, r_james.dob, r_james.get_top3())
+
+the_files =["james2.txt", "mikey2.txt", "julie2.txt", "sarah2.txt"]
+data = put_to_store(the_files)
+
+for each_ath in data:
+    print(data[each_ath].name   + " " + data[each_ath].dob)
+
 
 #print (julie)
 #print (sarah)
