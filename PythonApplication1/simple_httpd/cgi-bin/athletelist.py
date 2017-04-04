@@ -29,3 +29,4 @@ class AthleteList(list):
     @property
     def as_dict(self):
         return ( {"name": self.name, "dob": self.dob, "top3": self.top3})
+
