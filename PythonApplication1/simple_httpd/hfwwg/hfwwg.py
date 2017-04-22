@@ -45,7 +45,7 @@ class SightingInputPage(webapp.RequestHandler):
         html = template.render('templates/header.html', {'title': 'Thank you!'})
         html = html + "<p>Thank you for providing your sighting data.</p>"
         html = html + template.render('templates/footer.html',
-                                      {'links': 'Enter <a href="/">another sighting</a>.'})
+                                      {'links': '<a href="./"> Enter another sighting </a>'})
         self.response.out.write(html)
 
 
